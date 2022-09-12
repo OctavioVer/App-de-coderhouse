@@ -1,4 +1,5 @@
 import img from "../imagenes/descarga.png";
+import "../componentes/Navbar.css";
 import React from "react";
 import Carrito from "./CartWidget";
 
@@ -8,6 +9,9 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
       <div className="container-fluid">
+        <a className="nav-link active marca__nombre" href="#">
+          Centerbend
+        </a>
         <a className="navbar-brand" href="#">
           <img src={logo} alt="" width="30" height="24" />
         </a>
@@ -78,8 +82,8 @@ const Navbar = () => {
             </button>
           </form>
         </div>
+        <Carrito />
       </div>
-      <Carrito />
     </nav>
   );
 };
