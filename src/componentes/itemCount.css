@@ -2,6 +2,9 @@
   width: fit-content;
   background-color: #860;
   margin: auto;
-  padding: 1rem;
+  padding: 5px;
   text-align: center;
+
+  position: relative;
+  right: 160px;
 }

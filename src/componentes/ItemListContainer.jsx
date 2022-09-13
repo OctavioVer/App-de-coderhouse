@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ItemCount from "./ItemCount";
 import ItemList from "./ItemList";
 
 const tarjeta = [
@@ -57,14 +56,9 @@ const ItemContainer = ({ greeting }) => {
     getData.then((res) => setData(res));
   }, []);
 
-  const onAdd = (valor) => {
-    console.log(`Usted tiene ${valor} unidades en el carrito`);
-  };
-
   return (
     <div>
       <p>{greeting}</p>
-      <ItemCount initial={1} stock={10} onAdd={onAdd} />
       <ItemList data={data} />
     </div>
   );
