@@ -1,20 +1,14 @@
-import img from "../imagenes/descarga.png";
 import "../componentes/Navbar.css";
 import React from "react";
-import Carrito from "./CartWidget";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  let logo = img;
-
   return (
     <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="nav-link active marca__nombre" href="#">
+        <Link className="nav-link active marca__nombre" to="/">
           Centerbend
-        </a>
-        <a className="navbar-brand" href="#">
-          <img src={logo} alt="" width="30" height="24" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -29,43 +23,35 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Inicio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="#">
+              <Link className="nav-link active" to={""}>
                 Tienda
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
-              <a
+              <Link
                 className="nav-link dropdown-toggle"
-                href="#"
+                to={""}
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Productos
-              </a>
+              </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Casa
-                  </a>
+                  <Link className="dropdown-item" to="/categoria/Hombre">
+                    Hombre
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Exterior
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Electrodomesticos
-                  </a>
+                  <Link className="dropdown-item" to="/categoria/Mujer">
+                    Mujer
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -82,7 +68,9 @@ const Navbar = () => {
             </button>
           </form>
         </div>
-        <Carrito />
+        <Link to="/carrito" className="enlace">
+          <i className="fi fi-rr-shopping-cart"></i>
+        </Link>
       </div>
     </nav>
   );

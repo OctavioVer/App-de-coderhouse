@@ -3,9 +3,7 @@ import React from "react";
 const Carrito = () => {
   return (
     <div>
-      <a href="#" className="enlace">
-        <i className="fi fi-rr-shopping-cart"></i>
-      </a>
+      <h1>carrito</h1>
     </div>
   );
 };

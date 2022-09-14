@@ -2,15 +2,33 @@ import "./App.css";
 import ItemDetailContainer from "./componentes/ItemDetailContainer";
 import ItemListContainer from "./componentes/ItemListContainer";
 import Navbar from "./componentes/NavBar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Carrito from "./componentes/CartWidget";
 
 function App() {
   return (
     <div className=".container-fluid">
-      <Navbar />
-      <main>
-        <ItemListContainer greeting="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur" />
-        <ItemDetailContainer />
-      </main>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <ItemListContainer
+                greeting={
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum modiquia sit incidunt dolore, sapiente, eum iste unde dolores eos hic ipsaullam ab nostrum velit possimus, qui nemo magnam."
+                }
+              />
+            }
+          />
+          <Route
+            path="/categoria/:categoryId"
+            element={<ItemListContainer />}
+          />
+          <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+          <Route path="/carrito" element={<Carrito />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
