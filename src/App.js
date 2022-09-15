@@ -4,6 +4,7 @@ import ItemListContainer from "./componentes/ItemListContainer";
 import Navbar from "./componentes/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Carrito from "./componentes/CartWidget";
+import Home from "./componentes/Home";
 
 function App() {
   return (
@@ -11,16 +12,8 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route
-            path="/"
-            element={
-              <ItemListContainer
-                greeting={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum modiquia sit incidunt dolore, sapiente, eum iste unde dolores eos hic ipsaullam ab nostrum velit possimus, qui nemo magnam."
-                }
-              />
-            }
-          />
+          <Route path="/" element={<Home />} />
+          <Route path="/categoria" element={<ItemListContainer />} />
           <Route
             path="/categoria/:categoryId"
             element={<ItemListContainer />}

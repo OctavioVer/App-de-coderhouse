@@ -1,3 +1,7 @@
+## Introduccion
+
+Esta aplicacion es una tienda de ropa Masculina y Femenina cuya finalidad es lograr ventas via internet para tener un alcance mayor sobre los clientes.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

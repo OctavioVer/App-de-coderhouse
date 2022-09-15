@@ -30,7 +30,7 @@ const detalle = [
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4000 Pesos",
-    foto: "https://ferreira.vteximg.com.br/arquivos/ids/383149-540-540/fi_f11l5060126577.jpg?v=637693091478770000",
+    foto: "https://tommyargentina.vteximg.com.br/arquivos/ids/204391-500-667/MW0MW24594_DW5_1.jpg?v=637927178658100000",
     stock: 5,
   },
   {
@@ -40,7 +40,7 @@ const detalle = [
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4000 Pesos",
-    foto: "https://ferreira.vteximg.com.br/arquivos/ids/383149-540-540/fi_f11l5060126577.jpg?v=637693091478770000",
+    foto: "https://tommyargentina.vteximg.com.br/arquivos/ids/204391-500-667/MW0MW24594_DW5_1.jpg?v=637927178658100000",
     stock: 5,
   },
   {
@@ -50,7 +50,7 @@ const detalle = [
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4000 Pesos",
-    foto: "https://ferreira.vteximg.com.br/arquivos/ids/383149-540-540/fi_f11l5060126577.jpg?v=637693091478770000",
+    foto: "https://tommyargentina.vteximg.com.br/arquivos/ids/204391-500-667/MW0MW24594_DW5_1.jpg?v=637927178658100000",
     stock: 5,
   },
   {
@@ -60,7 +60,7 @@ const detalle = [
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4000 Pesos",
-    foto: "https://ferreira.vteximg.com.br/arquivos/ids/383149-540-540/fi_f11l5060126577.jpg?v=637693091478770000",
+    foto: "https://tommyargentina.vteximg.com.br/arquivos/ids/204391-500-667/MW0MW24594_DW5_1.jpg?v=637927178658100000",
     stock: 5,
   },
   {
@@ -70,7 +70,7 @@ const detalle = [
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4000 Pesos",
-    foto: "https://ferreira.vteximg.com.br/arquivos/ids/383149-540-540/fi_f11l5060126577.jpg?v=637693091478770000",
+    foto: "https://tommyargentina.vteximg.com.br/arquivos/ids/204391-500-667/MW0MW24594_DW5_1.jpg?v=637927178658100000",
     stock: 5,
   },
   {
@@ -80,7 +80,7 @@ const detalle = [
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4000 Pesos",
-    foto: "https://ferreira.vteximg.com.br/arquivos/ids/383149-540-540/fi_f11l5060126577.jpg?v=637693091478770000",
+    foto: "https://tommyargentina.vteximg.com.br/arquivos/ids/204391-500-667/MW0MW24594_DW5_1.jpg?v=637927178658100000",
     stock: 5,
   },
 ];
