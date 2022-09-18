@@ -1,10 +1,13 @@
 import "../componentes/itemDetail.css";
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ data }) => {
-  const onAdd = (valor) => {
-    console.log(`Usted tiene ${valor} unidades en el carrito`);
+  const [irAlCarrito, setCarrito] = useState(false);
+
+  const onAdd = () => {
+    setCarrito(true);
   };
 
   return (
@@ -23,7 +26,13 @@ const ItemDetail = ({ data }) => {
             <p className="card-text">{data.descripcion}</p>
             <h6 className="card-text">{data.categoria}</h6>
             <p className="card-text">{data.precio}</p>
-            <ItemCount initial={1} stock={data.stock} onAdd={onAdd} />
+            {irAlCarrito ? (
+              <Link className="btn btn-outline-success  btn-sm" to="/carrito">
+                Finalizar compra
+              </Link>
+            ) : (
+              <ItemCount initial={1} stock={data.stock} onAdd={onAdd} />
+            )}
           </div>
         </div>
       </div>

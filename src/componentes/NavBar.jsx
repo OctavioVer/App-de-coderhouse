@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
       <div className="container-fluid">
-        <Link className="nav-link active marca__nombre" to="/">
+        <Link className="marca__nombre" to="/">
           Centerbend
         </Link>
         <button

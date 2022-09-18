@@ -1,5 +1,7 @@
 .marca__nombre {
-  margin: 9px;
+  margin: 5px;
+  padding: 4px;
+  text-decoration: none;
   color: #fff !important;
   border: #fff 1px solid;
   box-shadow: -8px 3px 5px black;
