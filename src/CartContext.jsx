@@ -3,16 +3,15 @@ const CartContext = React.createContext([]);
 
 export const useCartContext = () => useContext(CartContext);
 
-const CartContainer = ({ Children }) => {
+const CartContainer = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const addProduct = (item, newQuantity) => {
     const newCart = cart.filter((prod) => prod.id !== item.id);
     newCart.push({ ...item, quantity: newQuantity });
     setCart(newCart);
+    console.log("carrito", cart);
   };
-
-  console.log("carrito", cart);
 
   const clearCart = () => setCart([]);
 
@@ -31,7 +30,7 @@ const CartContainer = ({ Children }) => {
         addProduct,
       }}
     >
-      {Children}
+      {children}
     </CartContext.Provider>
   );
 };

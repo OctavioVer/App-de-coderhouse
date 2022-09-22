@@ -30,7 +30,7 @@ const ItemDetail = ({ data }) => {
             <h6 className="card-text">{data.categoria}</h6>
             <p className="card-text">{data.precio}</p>
             {irAlCarrito ? (
-              <Link className="btn btn-outline-success  btn-sm" to="/carrito">
+              <Link className="btn btn-outline-success  btn-sm" to="/cart">
                 Finalizar compra
               </Link>
             ) : (
