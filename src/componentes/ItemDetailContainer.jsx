@@ -6,7 +6,7 @@ const detalle = [
   {
     id: 1,
     categoria: "Indumentaria ",
-    titulo: "Buzo",
+    titulo: "Buzo Fila",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4200 Pesos",
@@ -16,7 +16,7 @@ const detalle = [
   {
     id: 2,
     categoria: "Indumentaria ",
-    titulo: "Buzo",
+    titulo: "Buzo Oversize",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4500 Pesos",
@@ -26,7 +26,7 @@ const detalle = [
   {
     id: 3,
     categoria: "Indumentaria ",
-    titulo: "Buzo",
+    titulo: "Buzo Tommy Hilfiger",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4000 Pesos",
@@ -36,51 +36,51 @@ const detalle = [
   {
     id: 4,
     categoria: "Indumentaria ",
-    titulo: "Buzo",
+    titulo: "Buzo Adidas",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4000 Pesos",
-    foto: "https://tommyargentina.vteximg.com.br/arquivos/ids/204391-500-667/MW0MW24594_DW5_1.jpg?v=637927178658100000",
+    foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaKyjl2uHOvqlR7TNGLfylUNSbSemMesnUFQ&usqp=CAU",
     stock: 5,
   },
   {
     id: 5,
     categoria: "Indumentaria ",
-    titulo: "Buzo",
+    titulo: "Buzo Taverniti",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4000 Pesos",
-    foto: "https://tommyargentina.vteximg.com.br/arquivos/ids/204391-500-667/MW0MW24594_DW5_1.jpg?v=637927178658100000",
+    foto: "https://taverniti.vteximg.com.br/arquivos/ids/247047-345-345/04711_649X1.jpg?v=637968633629100000",
     stock: 5,
   },
   {
     id: 6,
     categoria: "Indumentaria ",
-    titulo: "Buzo",
+    titulo: "Buzo Koaj Verde",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4000 Pesos",
-    foto: "https://tommyargentina.vteximg.com.br/arquivos/ids/204391-500-667/MW0MW24594_DW5_1.jpg?v=637927178658100000",
+    foto: "https://cdn.koaj.co/116208-home_mobile_default/buzo-con-capota-estampado.jpg",
     stock: 5,
   },
   {
     id: 7,
     categoria: "Indumentaria ",
-    titulo: "Buzo",
+    titulo: "Buzo Universitario",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4000 Pesos",
-    foto: "https://tommyargentina.vteximg.com.br/arquivos/ids/204391-500-667/MW0MW24594_DW5_1.jpg?v=637927178658100000",
+    foto: "https://cdn.koaj.co/104517-home_mobile_default/buzo-con-capota-estampado.jpg",
     stock: 5,
   },
   {
     id: 8,
     categoria: "Indumentaria ",
-    titulo: "Buzo",
+    titulo: "Buzo Rosa Cropped",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
     precio: "$4000 Pesos",
-    foto: "https://tommyargentina.vteximg.com.br/arquivos/ids/204391-500-667/MW0MW24594_DW5_1.jpg?v=637927178658100000",
+    foto: "https://cdn.koaj.co/c/371-category_default/cropped.jpg",
     stock: 5,
   },
 ];
