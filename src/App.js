@@ -6,13 +6,13 @@ import Navbar from "./componentes/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Carrito from "./componentes/CartWidget";
 import Home from "./componentes/Home";
-import Provider from "./CartContext";
+import CartContainer from "./CartContext";
 
 function App() {
   return (
     <div className=".container-fluid">
       <BrowserRouter>
-        <Provider>
+        <CartContainer>
           <Navbar />
           <Routes>
             <Route path="/home" element={<Home />} />
@@ -24,7 +24,7 @@ function App() {
             <Route path="/item/:itemId" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Carrito />} />
           </Routes>
-        </Provider>
+        </CartContainer>
       </BrowserRouter>
     </div>
   );
