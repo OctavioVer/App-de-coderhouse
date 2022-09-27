@@ -58,4 +58,4 @@ const CartContainer = ({ children }) => {
   );
 };
 
-export default CartContainer;
+export default Provider;
