@@ -1,26 +1,34 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useCartContext } from "../CartContext";
-import ItemCart from "./itemCart";
 
-const Carrito = () => {
-  const { cart, totalPrice } = useCartContext();
+export const CartWidget=()=>{
+  const {totalProducts}=useCartContext
+  return(
+    <>
+    <i className="bi bi-cart3"></i>
+    <span>{totalProducts()||``}</span>
+    </>
+  )
+}
 
-  if (cart.length === 0) {
-    return (
-      <div>
-        <p>No hay elementos en el carrito</p>
-        <Link to="/">Hacer Compras</Link>
-      </div>
-    );
-  }
-  return (
-    <div>
-      {cart.map((product => <ItemCart key={product.id} product={product} />
-      ))}
-      <p>Total: {totalPrice()}</p>
-    </div>
-  );
-};
+export default CartWidget
 
-export default Carrito;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

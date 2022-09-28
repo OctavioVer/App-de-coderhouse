@@ -4,9 +4,9 @@ import ItemDetailContainer from "./componentes/ItemDetailContainer";
 import ItemListContainer from "./componentes/ItemListContainer";
 import Navbar from "./componentes/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Carrito from "./componentes/CartWidget";
 import Home from "./componentes/Home";
 import CartContainer from "./CartContext";
+import Carrito from "./componentes/Cart";
 
 function App() {
   return (

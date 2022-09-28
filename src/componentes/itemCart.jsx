@@ -3,12 +3,12 @@ import { useCartContext } from "../CartContext";
 import "./itemCart.css";
 
 const ItemCart = ({ product }) => {
-  const [remuveProduct] = useCartContext();
+  const {remuveProduct} = useCartContext();
   return (
     <div className="itemCard">
-      <img src={product.image} alt={product.title} />
+      <img src={product.foto} alt={product.titulo} />
       <div>
-        <p>Titulo:{product.title}</p>
+        <p>Titulo:{product.titulo}</p>
         <p>Cantidad:{product.quantity}</p>
         <p>Precio:{product.price}</p>
         <p>SubTotal: ${product.quantity * product.price}</p>
