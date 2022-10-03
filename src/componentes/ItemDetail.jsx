@@ -26,9 +26,9 @@ const ItemDetail = ({ data }) => {
         <div className="col-md-8">
           <div className="card-body">
             <h3 className="card-title">{data.titulo}</h3>
-            <p className="card-text">{data.descripcion}</p>
-            <h6 className="card-text">{data.categoria}</h6>
-            <p className="card-text">{data.precio}</p>
+            <p className="card-text">{data.descripsion}</p>
+            <h6 className="card-text">Categoria: {data.categoria}</h6>
+            <p className="card-text">Precio ${data.price}</p>
             {irAlCarrito ? (
               <Link className="btn btn-outline-success  btn-sm" to="/cart">
                 Finalizar compra
