@@ -16,10 +16,10 @@ const ItemDetail = ({ data }) => {
   return (
     <div className="card mb-3 cartaDesc">
       <div className="row g-0">
-        <div className="col-md-4">
+        <div className="col-md-4 text-center">
           <img
             src={data.foto}
-            className="img-fluid rounded-start imagenDetalle"
+            className="img-fluid rounded-start imagenDetalle rounded"
             alt="..."
           />
         </div>

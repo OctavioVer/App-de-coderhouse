@@ -4,10 +4,9 @@ import ItemDetailContainer from "./componentes/ItemDetailContainer";
 import ItemListContainer from "./componentes/ItemListContainer";
 import Navbar from "./componentes/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./componentes/Home";
 import CartContainer from "./CartContext";
 import Carrito from "./componentes/Cart";
-import Formu from "./componentes/Formulario";
+import Checkout from "./componentes/Checkout";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <CartContainer>
           <Navbar />
           <Routes>
-            <Route path="/home" element={<Home />} />
             <Route path="/" element={<ItemListContainer />} />
             <Route
               path="/categoria/:categoryId"
@@ -24,7 +22,7 @@ function App() {
             />
             <Route path="/item/:itemId" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Carrito />} />
-            <Route path="/formulario" element={<Formu />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </CartContainer>
       </BrowserRouter>

@@ -36,8 +36,10 @@ const CartContainer = ({ children }) => {
   const isInCart = (id) =>
     cart.find((product) => product.id === id) ? true : false;
 
-  const remuveProduct = (id) =>
-    setCart([cart.filter((product) => product.id !== id)]);
+  const remuveProduct = (item) => {
+    const productosFiltrados = cart.filter((e) => e.id !== item.id);
+    return setCart(productosFiltrados);
+  };
 
   return (
     <CartContext.Provider

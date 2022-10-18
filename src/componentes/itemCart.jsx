@@ -5,11 +5,11 @@ import "./itemCart.css";
 const ItemCart = ({ product }) => {
   const { remuveProduct } = useCartContext();
   return (
-    <div className="card mb-3 carritoDiv">
-      <div className="row g-0">
-        <div className="col-md-4">
+    <div className="card mb-3 carritoDiv ">
+      <div className="row g-0 ">
+        <div className="col-md-4 text-center">
           <img
-            className="img-fluid rounded-start imagenDetalle"
+            className="img-fluid foto"
             src={product.foto}
             alt={product.titulo}
           />
@@ -26,7 +26,7 @@ const ItemCart = ({ product }) => {
               <li className="list-group-item">
                 <button
                   className="btn btn-outline-danger"
-                  onClick={() => remuveProduct()}
+                  onClick={() => remuveProduct(product)}
                 >
                   Eliminar
                 </button>

@@ -1,0 +1,100 @@
+.checkout {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+  grid-template-areas: ". form check check .";
+  margin-top: 50px;
+}
+
+.img-thumbnail {
+  height: 300px;
+}
+
+.checkout__form {
+  grid-area: form;
+  padding-bottom: 35px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  max-height: 430px;
+}
+
+.checkout__form label {
+  display: block;
+  width: 260px;
+  height: 25px;
+  margin-top: 25px;
+  margin-left: 15px;
+  margin: 20px 0px 10px 15px;
+  border-radius: 20px;
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(155, 165, 204, 1) 88%
+  );
+  padding: 10px 0px 30px 15px;
+  color: white;
+
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.checkout__form input {
+  display: inline-block;
+  width: 230px;
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.1);
+  height: 30px;
+  margin-left: 15px;
+  padding-left: 15px;
+  border: none;
+}
+
+.checkout__detail {
+  grid-area: check;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(99, 98, 98);
+  border-radius: 20px;
+}
+
+.checkout__detail--info {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  border-bottom: solid 1px black;
+  color: black;
+}
+
+.checkout__btn {
+  width: 120px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 5px 8px 30px 8px;
+  background-color: rgb(26, 177, 144);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.checkout__btn:hover {
+  cursor: pointer;
+  background-color: rgb(11, 139, 112);
+}
+
+.checkout__btn:active {
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+}
+
+.checkout__compra {
+  grid-area: form;
+}

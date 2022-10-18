@@ -1,0 +1,18 @@
+.carticon {
+  color: white;
+  margin-right: 50px;
+  font-size: 24px;
+}
+
+.cart__count {
+  width: 25px;
+  height: 23px;
+  padding: 2px 5px;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  background-color: red;
+}
+
+.ocultar {
+  opacity: 0;
+}
